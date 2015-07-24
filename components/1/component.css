@@ -3,6 +3,57 @@
 COMPONENT STYLESHEET
 ================================================================================ */
 
+body {
+    font: 300 62.5% sans-serif;
+}
+
+header {
+   max-width: 1000px;
+    background: #333333;
+    color: #ffffff;
+    
+}
+
+h1 {
+    /*background: url(Screen%20Shot%202015-07-20%20at%209.26.40%20PM.png) no-repeat left;*/
+    width: 150px;
+    float: left;
+    font-size: 1.8rem;
+}
+
+nav {
+    width: 450px;
+    float: left;
+    margin-left: 100px;
+}
+nav li {
+    width: 100;
+    display: inline-block;
+    text-transform: capitalize;
+}
+
+
+ul a{
+    display: block;
+    line-height: 15px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+ul a:hover, .current{
+  
+}
+
+p{
+    width: 150px;
+    float: left;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+p em {
+    color: #;
+}
 /* HEADER ======================================== */
 
-/* HEADER ======================================== */

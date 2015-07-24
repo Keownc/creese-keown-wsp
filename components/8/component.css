@@ -3,6 +3,69 @@
 COMPONENT STYLESHEET
 ================================================================================ */
 
-/* HEADER ======================================== */
+body {
+    font: 62.5% "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 
-/* HEADER ======================================== */
+h2, h3 {
+    font: 500 1rem "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+/* Upcoming/about us*/
+h2 {
+    color: #898a8a; 
+    font-size: 3.2rem;
+    font-weight: 900;
+    margin: 40px 0 20px 20px;
+}
+h3 {
+    color: #909090;
+    margin: 20px 0 20px 0;
+}
+
+section {
+    
+    width: 100%;
+    text-align: left;
+}
+
+article {
+    width: 25%;
+    float: left;
+    padding: 0 1rem 0 1rem;
+    
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    color: #acacac;
+    margin-bottom: 40px;
+}
+/* Aricle btn */
+p:last-of-type a {
+    width: 60%;
+    background: #19a6a6;
+    text-align: center;
+    padding: 1.1rem 3rem 1.1rem 3rem;
+    
+}
+
+
+p:last-of-type a {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .8rem;
+   
+}
+
+p:last-of-type a:hover {
+    background: #acacac;
+    
+}

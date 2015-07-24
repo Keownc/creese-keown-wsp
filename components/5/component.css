@@ -3,6 +3,57 @@
 COMPONENT STYLESHEET
 ================================================================================ */
 
-/* HEADER ======================================== */
+html { font-size: 62.5%;}
 
-/* HEADER ======================================== */
+
+body {
+    font: 400 1.6rem/1.5 "Helvetica Neue",Helvetica,Arial,sans-serif;
+    background: #ffffff;
+    color: #999999;
+}
+
+section{
+    max-width: 1150px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 3rem;
+}
+
+/* Team MEMBER ======================================== */
+article {
+    width: calc(100%/3 - 4rem);
+    margin: 0 2rem;
+    padding: 1rem;
+    float: left;
+
+}
+
+img {
+    border-radius: 50%;
+}
+
+blockquote {
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background: url(Screen%20Shot%202015-07-24%20at%201.21.48%20PM.png) no-repeat 5px -9px;
+    background-size: 4rem;
+    text-indent: 30px;
+}
+
+p a{
+    font-size: 1.6rem;
+    font-weight: 500;
+    height: 2rem;
+    color:#f36639;
+
+}
+

@@ -3,6 +3,22 @@
 COMPONENT STYLESHEET
 ================================================================================ */
 
-/* HEADER ======================================== */
+nav ul {
+    background: #000000;
+    overflow: hidden;
+}
 
-/* HEADER ======================================== */
+nav ul li {
+    width: 110px;
+    float: left;
+    font: 1.3rem "Roboto Slab",serif;
+   
+}
+
+nav ul li a{
+    text-align: center;
+    text-decoration: none;
+    line-height: 50px;
+    display: block;
+    color: #ffffff;
+}

@@ -31,10 +31,22 @@ header form, header > ul {
 form{
     
 }
-
+label {
+    display: none;
+}
 input {
     padding: 7px 28px 7px 10px;
-    width: 254px;
+    width: 250px;
+    border: 1px solid #777777;
+    
+    display: inline;
+}
+input[type*="submit"] {
+    width: 40px;
+    padding: 6px 0;
+    text-indent: -9999px;
+    background: url() no-repeat center;
+    border-right: 1px solid #777777;
 }
 /*-----------------Account info--------------------*/
 header > ul li {
@@ -47,7 +59,34 @@ ul li a {
     color: #777;
     text-decoration: none;
 }
-
+ul li > ul {
+    display: none;
+}
+ul li > ul::before {
+    content: "\25BC";
+    font-size: 2.5rem;
+    display: block;
+    position: absolute;
+    top: -37%;
+    right: 12%;
+}
+ul li > ul li a {
+    text-align: left;
+    border-bottom: 1px solid #fff;
+    padding-left: 1.3rem;
+}
+ul li:hover > ul  {
+    position: absolute;
+    display: block;
+}
+ul li:hover > ul {
+    position: absolute;
+    display: block;
+    background: #ffffff;
+}
+ul li > ul li {
+    background: #000000;
+}
 /*--------------------Main Nav------------------*/
 nav::before {
     content: "";
@@ -60,12 +99,13 @@ nav ul {
 }
 
 nav ul li {
-    width: 110px;
+    width: 130px;
     float: left;
     font: 1.7rem "Roboto Slab",serif;
     font-weight: 900;
     text-transform: uppercase;
     /*padding: 13px 13px 17px;*/
+    border-right: 1px solid #ffffff;
 }
 
 nav ul li a{
@@ -75,7 +115,29 @@ nav ul li a{
     display: block;
     color: #ffffff;
 }
-
+/*----------------dropdown----------------*/
 nav ul li > ul {
-    display: hidden;
+    display: none;
 }
+nav ul li > ul::before {
+    content: "\25BC";
+    font-size: 2.5rem;
+    display: block;
+    position: absolute;
+    top: -37%;
+    right: 12%;
+}
+nav ul li > ul li a {
+    text-align: left;
+    border-bottom: 1px solid #fff;
+    padding-left: 1.3rem;
+}
+nav ul li:hover > ul  {
+    position: absolute;
+    display: block;
+    background: #ffffff;
+}
+nav ul li > ul li {
+    background: #000000;
+}
+

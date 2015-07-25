@@ -3,6 +3,57 @@
 COMPONENT STYLESHEET
 ================================================================================ */
 
+html {font-size: 62.5%;}
+
+body {
+    font: 300 1.4rem/2rem "Roboto", serif;
+    color: #b4b4b4;
+}
+/*--------------------header--------------------*/
+h1 {
+    background: url(logo.gif) no-repeat;
+    width: calc(100%/3);
+    height: 12rem;
+    float: left;
+    padding-left: 5rem;
+}
+h1 a {
+    display: block;
+    text-indent: -9999px;
+}
+header form, header > ul {
+    width: calc(100%/3 * 2 - 5em);
+    float: right;
+    text-align: right;
+    padding-right: 5rem;
+}
+/*--------------------form-------------------------*/
+form{
+    
+}
+
+input {
+    padding: 7px 28px 7px 10px;
+    width: 254px;
+}
+/*-----------------Account info--------------------*/
+header > ul li {
+    display: inline-block;
+    border-right: 1px solid #d9d9d9;
+    padding: 2px 12px 4px;
+}
+ul li a {
+    display: block;
+    color: #777;
+    text-decoration: none;
+}
+
+/*--------------------Main Nav------------------*/
+nav::before {
+    content: "";
+    display: table;
+    clear: both;
+}
 nav ul {
     background: #000000;
     overflow: hidden;
@@ -11,8 +62,10 @@ nav ul {
 nav ul li {
     width: 110px;
     float: left;
-    font: 1.3rem "Roboto Slab",serif;
-   
+    font: 1.7rem "Roboto Slab",serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    /*padding: 13px 13px 17px;*/
 }
 
 nav ul li a{
@@ -21,4 +74,8 @@ nav ul li a{
     line-height: 50px;
     display: block;
     color: #ffffff;
+}
+
+nav ul li > ul {
+    display: hidden;
 }

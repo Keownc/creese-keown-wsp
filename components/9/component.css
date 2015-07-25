@@ -6,7 +6,141 @@ COMPONENT STYLESHEET
 html {
     font-size: 62.5%;
 }
-
 body {
-    font: 1.4rem "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font: 1.4rem/1.6 "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+
+/*-------------------Footer---------------------*/
+footer {
+    background: #19232d;
+    color: #d7dade; /*#d7dade*/
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+img {
+    width: 75px;
+}
+/*----------------about------------------*/
+.about, .post, .photos {
+    width: calc(100%/3);
+    float: left;
+    padding: 2rem;
+}
+footer h2{
+    font: bold 1.6rem "Open Sans", Arial, sans-serif;
+    text-transform: uppercase;
+    border-bottom: 1px solid #253443;
+    color: #c5c7cb;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+}
+.about p:first-of-type {
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+.about em{
+    color: #e54e53;
+}
+label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+label[for*="submit"] {
+    display: none;
+}
+input {
+    width: 200px;
+    background: #1f2c38;
+    color: #c5c7cb;
+    line-height: 1.4;
+    padding: 8px 12px;
+    display: inline;
+    margin-right: 5px;
+}
+input[type*="submit"]{
+    width: 100px;
+    background: #2a3c4c;
+    color: #fff;
+}
+
+/*-----------Popular Posts---------------*/
+h3 {
+    color: #a3a8b1;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+article p:first-of-type {
+    border-bottom: 1px solid #253443;
+}
+article p:last-of-type {
+    width: 22px;
+    position: relative;
+    top: -70px;
+    left: 400px;
+}
+.post img {
+    float: left;
+    margin-right: 20px;
+    
+}
+.post a {
+    color: #ffffff;
+}
+.post a:hover {
+    text-decoration: underline;
+}
+/*----------------photos-------------------*/
+figure img {
+    margin-right: 10px;
+}
+section:last-of-type::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/*---------------last section--------------*/
+section:last-of-type {
+    font-size: 1.3rem;
+    line-height: 50px;
+    padding: 0 20px;
+    background: #121a21 ;
+    color: #8d8e92;
+    clear: both;
+}
+section:last-of-type p {
+    width: 75%;
+    float: left;
+}
+section:last-of-type ul {
+    width: 25%;
+    float: right;
+    text-align: left;
+
+}
+section:last-of-type ul li {
+    width: 65px;
+    display: inline-block;
+    text-transform: capitalize;
+    border-right: 1px dotted center;
+}
+section:last-of-type a {
+    color: #c5c7cb;
+}
+section:last-of-type a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+

@@ -3,11 +3,80 @@
 COMPONENT STYLESHEET
 ================================================================================ */
 
-html { font-size: 62.5%;}
-
+html {
+    font-size: 62.5%;
+}
 
 body {
-    font: 400 1.6rem/1.5 sans-serif;
-    background: #eaeaea;
-    color: #777777;
+    font: 1.4rem/1.6 "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+section {
+    background: #f2f2f2;
+    padding: 1rem;
+}
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+img {
+    max-width: 100%;
+}
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+h2 {
+    position: relative;
+    bottom: -30px;
+    left: 30px;
+    width: 100px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    background: #e54e53;
+    color: #ffffff;
+
+}
+
+/*--------------Feature article--------------*/
+.featured-article {
+    width: calc(100% / 3 * 2);
+    float: left;
+}
+.featured-article p {
+    font-size: 1.8rem;
+    position: relative;
+    top: -80px;
+    left: 30px;
+    color: #ffffff;
+}
+.featured-article p:first-of-type {
+    font-size: 1.1rem;
+    color: #d3dbdf;
+    text-transform: uppercase;
+}
+/*--------------Top post--------------*/
+.top-post {
+    width: calc(100% / 3 );
+    float: left;
+}
+.top-post article {
+    width: 50%;
+    float: left;
+    padding-right: 2rem;
+}
+.top-post article:first-of-type {
+    width: 100%;
+}
+.top-post article a {
+    color: #ffffff;
+}
+.top-post article a:hover {
+    text-decoration: underline;
+}
+.top-post article p {
+    font-size: 1.4rem;
+    position: relative;
+    top: -60px;
+    left: 10px;
 }

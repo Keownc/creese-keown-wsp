@@ -19,6 +19,7 @@ h2 {
     font-weight: 900;
     margin: 40px 0 20px 20px;
 }
+
 h3 {
     color: #909090;
     margin: 20px 0 20px 0;
@@ -52,10 +53,8 @@ p:last-of-type a {
     width: 60%;
     background: #19a6a6;
     text-align: center;
-    padding: 1.1rem 3rem 1.1rem 3rem;
-    
+    padding: 1.1rem 3rem 1.1rem 3rem;   
 }
-
 
 p:last-of-type a {
     color: #ffffff;
@@ -66,6 +65,5 @@ p:last-of-type a {
 }
 
 p:last-of-type a:hover {
-    background: #acacac;
-    
+    background: #acacac; 
 }

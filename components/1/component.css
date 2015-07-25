@@ -3,26 +3,37 @@
 COMPONENT STYLESHEET
 ================================================================================ */
 
+html{ font-size: 62.5%}
 body {
-    font: 300 62.5% sans-serif;
+    font: 300 1.4rem/1.7 sans-serif;
 }
 
 header {
-   max-width: 1000px;
+    max-width: 1000px;
     background: #333333;
-    color: #ffffff;
+color: #ffffff;
     
 }
 
+
 h1 {
-    /*background: url(Screen%20Shot%202015-07-20%20at%209.26.40%20PM.png) no-repeat left;*/
-    width: 150px;
+    width: 25%;
     float: left;
     font-size: 1.8rem;
+    color: #ffffff;
+}
+h1::before {
+    background: rgba(0, 0, 0, 0) url('logo.png') no-repeat scroll 0 0;
+    content: "";
+    height: 59px;
+    left: 0;
+    position: absolute;
+    top: -1px;
+    width: 59px;
 }
 
-nav {
-    width: 450px;
+nav ul{
+    width: 50%;
     float: left;
     margin-left: 100px;
 }
@@ -46,14 +57,17 @@ ul a:hover, .current{
 }
 
 p{
-    width: 150px;
+    width: 25%;
     float: left;
     font-size: 1.2rem;
-    text-align: center;
+    text-align: right;
+    color: #ffffff;
 }
 
 p em {
-    color: #;
+    color: #5bc8a5;
+    font-size: 1.5rem;/*15px*/
+        
 }
 /* HEADER ======================================== */
 

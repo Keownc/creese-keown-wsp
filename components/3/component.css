@@ -2,7 +2,71 @@
 ================================================================================
 COMPONENT STYLESHEET
 ================================================================================ */
+html {
+    font-size: 62.5%;
+}
 
+body {
+    font: 1.4rem/1.6 "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+section {
+    font-family: "PT Sans Narrow",sans-serif;
+    padding: 5.5% 6% 0;
+    text-align: center;
+    color: #ffffff;
+    margin: 0 2rem;
+}
+
+/*---------------CTA---------------*/
+article {
+    max-width: 1150px;
+   
+}
+article img {
+    width: 100%;
+    position: absolute;
+    top: -5px;
+    left: 0;
+    z-index: -1;
+}
 h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+h2::before {
+    content: '';
+    width: 21px;
+    height: 4px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    background: #ffffff no-repeat scroll ;
+}
+h2 em{
+    color: #fbaf1e;
+    display: block;
+}
+P {
+    font-size: 1rem;
+    margin: 1rem 0 3rem 0;  
+}
+p a {
+    font-size: 1.8rem;
+    font-weight: 600;
+    background: #fbaf1e;
+    color: #ffffff;
+    padding: 1.6rem;
+}
+li a[href*="prev"] {
+    
+}
+p:last-child a::after {
+   
+}
+li a[href*="next"] {
     
 }

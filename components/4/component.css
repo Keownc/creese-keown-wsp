@@ -2,25 +2,30 @@
 ================================================================================
 COMPONENT STYLESHEET
 ================================================================================ */
+html {font-size: 62.5%}
 
 body {
-    font: 62.5% "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    font: 1.4rem "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
 }
 
+section {
+    border-top: 4px solid #e62f17; 
+}
 h1 {
     background: url(images.png) no-repeat center;
     text-indent: -9999px; 
     height: 130px;
+    margin-top: 100px;
+}
+p {
+    padding-top: 1rem;
+    text-align: center;
+    color: #666666;
 }
 section p:first-of-type {
     font-size: 1.6rem; 
-    color: #666666;
     text-align: center;
     margin-right: 2rem;;
-}
-p {
-   
-    text-align: center; 
 }
 section a {
     color: #e62f17;
@@ -33,7 +38,6 @@ form{
     margin-top: 20px;
     text-align: center;
 }
-
 label{
     display: none;
 }
@@ -46,30 +50,40 @@ input{
     box-shadow: 1px;
     border-radius: 4px;
 }
-
 input[type*="submit"]{
     background: #e62f17;
     color: #fff;
 }
-
 /*--------------Footer----------------*/
 footer{
-    max-width: 100%;
-    height: 50px;
+    width: 100%;
+    height: 73px;
     background: #e62f17;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    line-height: 73px;
 }
-
-ul {
+ul{
     width: 75%;
-    
-}
-
-ul li {
     float: left;
-    width: 50px;
-    display: inline;
+}
+ul li {
+    width: 85px;
+    display: inline-block;
     text-align: center;
+    text-transform: capitalize;
+}
+ul li a{
+    color: #ffbab1;
+    font-size: 1.6rem;
+}
+ul li a:hover {
+    color: #ffffff; 
 }
 footer p{
-    text-align: left;
+    width: 25%;
+    float: left;
+    text-align: center;
+    color: #ffbab1;
 }

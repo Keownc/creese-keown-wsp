@@ -5,69 +5,102 @@ COMPONENT STYLESHEET
 
 html{ font-size: 62.5%}
 body {
-    font: 300 1.4rem/1.7 sans-serif;
+    font: 700 1.4rem/1.7 sans-serif;
 }
 
 header {
-    max-width: 1000px;
+    line-height: 5rem;
     background: #333333;
-color: #ffffff;
-    
+    color: #ffffff;
+    overflow: hidden;
+    padding: 1.5rem 6rem; 
 }
 
-
-h1 {
+h1 a {
     width: 25%;
     float: left;
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: #ffffff;
+    padding-left: 6rem;
 }
 h1::before {
-    background: rgba(0, 0, 0, 0) url('logo.png') no-repeat scroll 0 0;
     content: "";
-    height: 59px;
-    left: 0;
+    width: 10rem;
+    height: 78px;
     position: absolute;
-    top: -1px;
-    width: 59px;
+    left: 4rem;
+    top: .5rem;
+    background: url('logo.png') no-repeat scroll 0 0;
 }
-
 nav ul{
     width: 50%;
-    float: left;
-    margin-left: 100px;
+    float: left;  
 }
 nav li {
-    width: 100;
     display: inline-block;
-    text-transform: capitalize;
+    padding-left: 3rem;
 }
-
-
-ul a{
+nav li a {
+    font-weight: 400;
     display: block;
     line-height: 15px;
     text-align: center;
     text-decoration: none;
     text-transform: capitalize;
+    color: #ffffff;
 }
-
-ul a:hover, .current{
-  
+nav ul li > ul {
+    display: none;
 }
-
+/*
+nav li a::after {
+    content: "\25BC";
+    font-size: 2.5rem;
+    display: block;
+    position: absolute;
+    top: 3%;
+    right: 50%;
+}
+*/
+nav ul li > ul li a {
+    text-align: left;
+    border-bottom: 1px solid #fff;
+    font-weight: 300;
+    line-height: 2rem;
+    padding: 1rem 1.4rem;
+    text-transform: none;
+}
+nav ul li:hover > ul  {
+    position: absolute;
+    display: block;
+}
+nav ul a:hover, .current a{
+    color: #5bc8a5;
+}
 p{
     width: 25%;
     float: left;
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     text-align: right;
     color: #ffffff;
+    line-height: 2rem;
+    padding-top: .5rem;
 }
-
+p::before {
+    content: "";
+    width: 10rem;
+    height: 78px;
+    position: absolute;
+    left: 113rem;
+    top: 3rem;
+    background: url('phone.png') no-repeat scroll 0 0; 
+}
 p em {
     color: #5bc8a5;
     font-size: 1.5rem;/*15px*/
-        
+    font-weight: 300;
+    display: block;
+    
 }
 /* HEADER ======================================== */
 

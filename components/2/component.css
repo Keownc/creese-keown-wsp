@@ -53,39 +53,40 @@ header > ul li {
     display: inline-block;
     border-right: 1px solid #d9d9d9;
     padding: 2px 12px 4px;
+    position: relative;
 }
-ul li a {
+header ul li a {
     display: block;
     color: #777;
     text-decoration: none;
 }
-ul li > ul {
+header ul li > ul {
     display: none;
 }
-ul li > ul::before {
+header li ul::before {
     content: "\25BC";
     font-size: 2.5rem;
     display: block;
     position: absolute;
-    top: -37%;
+    top: 37%;
     right: 12%;
 }
-ul li > ul li a {
+header ul li > ul li a {
+    width: 130px;
     text-align: left;
-    border-bottom: 1px solid #fff;
-    padding-left: 1.3rem;
+    border-bottom: 1px solid #777777;
+    line-height: 1.7rem;
+    padding: .5rem .5rem;
+    text-align: left;
 }
-ul li:hover > ul  {
+header ul li:hover > ul {
     position: absolute;
-    display: block;
-}
-ul li:hover > ul {
-    position: absolute;
-    display: block;
+    display: table-column-group;
     background: #ffffff;
+    z-index: 1;
 }
-ul li > ul li {
-    background: #000000;
+header ul li:nth-of-type(1n+6) {
+    border-right: none;
 }
 /*--------------------Main Nav------------------*/
 nav::before {
@@ -97,7 +98,6 @@ nav ul {
     background: #000000;
     overflow: hidden;
 }
-
 nav ul li {
     width: 130px;
     float: left;
@@ -105,9 +105,9 @@ nav ul li {
     font-weight: 900;
     text-transform: uppercase;
     /*padding: 13px 13px 17px;*/
-    border-right: 1px solid #ffffff;
+    border-right: 1px solid #777777;
+   
 }
-
 nav ul li a{
     text-align: center;
     text-decoration: none;
@@ -119,25 +119,18 @@ nav ul li a{
 nav ul li > ul {
     display: none;
 }
-nav ul li > ul::before {
-    content: "\25BC";
-    font-size: 2.5rem;
-    display: block;
-    position: absolute;
-    top: -37%;
-    right: 12%;
-}
 nav ul li > ul li a {
     text-align: left;
     border-bottom: 1px solid #fff;
-    padding-left: 1.3rem;
+    font-weight: 300;
+    line-height: 2rem;
+    padding: 1rem 1.4rem;
+    text-transform: none;
 }
 nav ul li:hover > ul  {
     position: absolute;
     display: block;
-    background: #ffffff;
 }
 nav ul li > ul li {
     background: #000000;
 }
-

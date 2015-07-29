@@ -3,3 +3,135 @@
 COMPONENT STYLESHEET
 ================================================================================ */
 
+html { font-size: 62.5%;}
+
+body {
+    font: 300 1.4rem/1.4 "Helvetica Neue",Helvetica,Arial,sans-serif;
+    max-width: 1150px;
+    margin: 0 10rem;
+    color: #6b6b6b;
+
+}
+
+header {
+    border-bottom: 3px solid #e9e9e9;  
+    overflow: hidden;
+    line-height: 1.7;
+    padding: 2rem 0;
+}
+h1 {
+    width: calc(100%/3);
+    float: left;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+h1 em {
+    color: #fd4336;
+}
+nav {
+    width: calc(100%/3 *2);
+    float: left;
+}
+nav ul {
+    overflow: hidden;
+}
+nav li {
+    width: 100px;
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    /*padding: 13px 13px 17px;*/
+}
+nav ul li a{
+    text-align: center;
+    text-decoration: none;
+    line-height: 5rem;
+    display: block;
+    color: #6b6b6b;
+}
+a:hover, p:last-child a:hover  {
+    color: #fd4336; 
+}
+
+/*--------------------section------------------*/
+h2::before {
+    content: "";
+    display: block;
+    clear: both;
+}
+h2 {
+    width: 25%;
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    float:left;
+    margin-top: 3rem;
+}
+p {
+    display: inline;
+}
+p:last-child {
+    width: 100%;
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid #e9e9e9;
+    margin: 0;
+    padding: 1.5rem;
+}
+p:last-child a{
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #999999; 
+}
+form {
+    width: 20%;
+    float: right;
+    margin-top: 3rem;
+}
+select {
+    width: 7rem;
+    border: 1px solid #e9e9e9;
+    border-radius: 30px;
+    padding: 1rem;
+    background: #f7f7f7;
+}
+/*--------------------table------------------*/
+table {
+    width: 100%;
+    margin-top: 8rem;
+}
+th, td {
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid #e9e9e9;
+}
+th {
+    display: none;
+}
+tr:first-of-type {
+    border-top: 1px solid #e9e9e9;
+}
+td {
+    text-transform: capitalize;
+    letter-spacing: 0.1em;
+    font-size: 1.2rem;
+    font-style: italic;
+    text-align: left;
+    color: #acacac;
+}
+td:nth-of-type(2) a {
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-style: normal;
+    color: #6d6d6d;
+}
+td:nth-of-type(3) {
+    background: url(images/comment.png) no-repeat 0 0;
+    text-indent: 30px;
+}
+tr:hover {
+    background: rgba(109,109,109,0.1);
+    color: #fd4336;
+}

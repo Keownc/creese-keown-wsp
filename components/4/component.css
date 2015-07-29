@@ -64,9 +64,10 @@ footer{
     left: 0;
     line-height: 73px;
 }
-ul{
-    width: 75%;
+ul {
+    width: calc(75% - 2rem);
     float: left;
+    padding-left: 2rem;
 }
 ul li {
     width: 85px;
@@ -81,9 +82,10 @@ ul li a{
 ul li a:hover {
     color: #ffffff; 
 }
-footer p{
+footer p {
     width: 25%;
     float: left;
     text-align: center;
     color: #ffbab1;
+    margin-bottom: 6rem;
 }

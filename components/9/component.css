@@ -22,7 +22,7 @@ img {
     width: 75px;
 }
 /*----------------about------------------*/
-.about, .post, .photos {
+#about, #post, #photos {
     width: calc(100%/3);
     float: left;
     padding: 2rem;
@@ -36,13 +36,13 @@ footer h2{
     margin-bottom: 2rem;
     padding-bottom: 1rem;
 }
-.about p:first-of-type {
+#about p:first-of-type {
     text-transform: uppercase;
     font-size: 2.2rem;
     font-weight: 600;
     margin-bottom: 2rem;
 }
-.about em{
+#about em{
     color: #e54e53;
 }
 label {
@@ -83,15 +83,14 @@ article p:last-of-type {
     top: -70px;
     left: 400px;
 }
-.post img {
+#post img {
     float: left;
     margin-right: 20px;
-    
 }
-.post a {
+#post a {
     color: #ffffff;
 }
-.post a:hover {
+#post a:hover {
     text-decoration: underline;
 }
 /*----------------photos-------------------*/

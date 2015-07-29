@@ -30,23 +30,23 @@ footer section:first-of-type ul {
     margin: 1.4rem;
     margin-bottom: 3rem;
 }
-footer section:first-of-type ul li a {
+footer section:first-of-type li a {
     color: #828e99;
     font-size: 1.2rem;
     text-transform: capitalize;
 }
-footer section:first-of-type ul li a:hover {
+footer section:first-of-type li a:hover {
     color: #013568;
    
 }
-section:first-of-type ul li:first-of-type { 
+section:first-of-type li:first-of-type { 
     padding-bottom: 1.4rem;
 }
-section:first-of-type ul li:first-of-type a {
+section:first-of-type li:first-of-type a {
     color: #828e99;
     font-weight: 600;
 }
-section:first-of-type ul li:first-of-type a:hover {
+section:first-of-type li:first-of-type a:hover {
     color: #013568;
 }
 
@@ -68,7 +68,7 @@ footer section:last-of-type {
 footer section:last-of-type ul, p {
     padding-bottom: 1.5rem;
 }
-footer section:last-of-type ul li {
+footer section:last-of-type li {
     width: 150px;
     display: inline;
     padding-right: 2.2rem;
@@ -79,28 +79,28 @@ section:last-of-type a {
 footer section:last-of-type a:hover {
     text-decoration: underline;
 }
-footer section:last-of-type ul:nth-of-type(2) li a{
+footer section:last-of-type ul:nth-of-type(2) a {
     display: inline-block;
     text-indent: -9999px;
     width: 60px;
     height: 60px;
 }
-footer section:last-of-type li a[href*='contact_iso'] {
+a[href*='contact_iso'] {
     background: url(contact.png) no-repeat center;
 }
-footer section:last-of-type a[href*='facebook'] {
+a[href*='facebook'] {
     background: url(facebook.png) no-repeat center center;
 }
-footer section:last-of-type a[href*='twitter'] {
+a[href*='twitter'] {
     background: url(twiiter.png) no-repeat center;
 }
-section:last-of-type a[href*='google+'] {
+a[href*='google+'] {
     background: url(google.png) no-repeat center;
 }
-section:last-of-type a[href*='youtube'] {
+a[href*='youtube'] {
     background: url(youtube.png) no-repeat center;
 }
-section:last-of-type a[href*='linkedin'] {
+a[href*='linkedin'] {
     background: url(linkedin.png) no-repeat center; 
 }
 section:last-of-type a[href*='flickr'] {

@@ -46,7 +46,7 @@ h2::before {
     left: 50%;
     background: #ffffff no-repeat scroll ;
 }
-h2 em{
+h2 em {
     color: #fbaf1e;
     display: block;
 }
@@ -61,12 +61,38 @@ p a {
     color: #ffffff;
     padding: 1.6rem;
 }
-li a[href*="prev"] {
-    
+li a {
+    position: relative;
+    display: inline-block;
+    text-indent: -9999px; 
+    width: 2rem;
+    height: 2rem;
 }
-p:last-child a::after {
-   
+li:first-of-type::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: solid 1rem transparent;
+    border-right: solid 1rem #ffffff ;
+    border-bottom: solid 1rem transparent; 
+    position: absolute;
+    top: 15rem;
 }
-li a[href*="next"] {
-    
+
+li:last-of-type::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: solid 1rem transparent;
+    border-left: solid 1rem #ffffff ;
+    border-bottom: solid 1rem transparent;
+    position: absolute;
+    top: 15rem;
+    right: 10rem;
+}
+
+li:last-of-type::before:hover {
+    cursor: pointer;
 }

@@ -23,7 +23,7 @@ img {
     max-width: 100%;
 }
 .wrapper {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 h2 {
@@ -40,7 +40,7 @@ h2 {
 
 /*--------------Feature article--------------*/
 .featured-article {
-    width: calc(100% / 3 * 2);
+    width: 65%;
     float: left;
 }
 .featured-article p {
@@ -57,26 +57,38 @@ h2 {
 }
 /*--------------Top post--------------*/
 .top-post {
-    width: calc(100% / 3 );
+    width: 35%;
     float: left;
 }
 .top-post article {
-    width: 50%;
+    width: calc(50% - 2rem);
     float: left;
-    padding-right: 2rem;
 }
 .top-post article:first-of-type {
     width: 100%;
+    padding: 0;
 }
+.top-post article:last-of-type {
+
+}
+.top-post article:first-of-type p {
+    width: 100%;
+    font-size: 1.4rem;
+    position: relative;
+    top: -45px;
+    left: 10px;
+}
+
 .top-post article a {
     color: #ffffff;
 }
 .top-post article a:hover {
     text-decoration: underline;
 }
-.top-post article p {
-    font-size: 1.4rem;
+.top-post p {
+    width: 80%;
+    font-size: 1.2rem;
     position: relative;
-    top: -60px;
+    top: -75px;
     left: 10px;
 }

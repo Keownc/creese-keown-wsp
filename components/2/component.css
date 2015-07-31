@@ -48,6 +48,7 @@ input[type*="submit"] {
     background: url(search-icon.png) no-repeat center;
     background-size: 6rem;
     border-right: 1px solid #777777;
+    cursor: pointer;
 }
 /*-----------------Account info--------------------*/
 header > ul {
@@ -69,7 +70,6 @@ header ul li > ul {
 }
 header li ul{
     content: "\25BC";
-    font-size: 2.5rem;
     display: block;
     position: absolute;
    

@@ -65,14 +65,17 @@ nav li a::after {
 nav ul li > ul li a {
     text-align: left;
     border-bottom: 1px solid #fff;
-    font-weight: 300;
+    font-weight: normal;
     line-height: 2rem;
-    padding: 1rem 1.4rem;
     text-transform: none;
+    color: #ffffff;
 }
 nav ul li:hover > ul  {
+    width: 15%;
     position: absolute;
     display: block;
+    background: #333333;
+    margin-top: 1.5rem;
 }
 nav ul a:hover, .current a{
     color: #5bc8a5;
@@ -80,7 +83,7 @@ nav ul a:hover, .current a{
 p{
     background: url('phone.png') no-repeat scroll 0 0; 
     background-size: 3rem;
-    background-position: bottom center;
+    background-position: 150px 18px;
     width: 25%;
     float: left;
     font-size: 1.7rem;

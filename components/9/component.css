@@ -80,8 +80,8 @@ article p:first-of-type {
 article p:last-of-type {
     width: 22px;
     position: relative;
-    top: -70px;
-    left: 400px;
+    top: -7rem;
+    left: 100%;
 }
 #post img {
     float: left;
@@ -90,7 +90,7 @@ article p:last-of-type {
 #post a {
     color: #ffffff;
 }
-#post a:hover {
+a:hover {
     text-decoration: underline;
 }
 /*----------------photos-------------------*/
@@ -130,10 +130,6 @@ section:last-of-type ul li {
 section:last-of-type a {
     color: #c5c7cb;
 }
-section:last-of-type a:hover {
-    text-decoration: underline;
-}
-
 
 
 

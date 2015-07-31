@@ -122,16 +122,59 @@ td {
     color: #acacac;
 }
 td:nth-of-type(2) a {
+    height: 3rem;
+    display: block;
     font-size: 1.4rem;
     font-weight: 600;
     font-style: normal;
     color: #6d6d6d;
 }
 td:nth-of-type(3) {
-    background: url(images/comment.png) no-repeat 0 0;
-    text-indent: 30px;
+    background: url(images/comment.png) no-repeat center left;
+    background-size: 2.5rem;
+    text-indent: 2rem;
+}
+td:last-of-type {
+    background: url(images/tag.png) no-repeat left center;
+    background-size: 1.9rem;
+    text-indent: 1rem; 
 }
 tr:hover {
     background: rgba(109,109,109,0.1);
     color: #fd4336;
+}
+a[href*="gallery"] {
+    background: url(images/gallery.png) no-repeat center left;
+    background-size: 4rem;
+    text-indent: 5rem; 
+}
+a[href*="video"] {
+    background: url(images/video.png) no-repeat center left;
+    background-size: 4rem;
+    text-indent: 5rem; 
+}
+a[href*="audio"] {
+    background: url(images/audio.png) no-repeat center left;
+    background-size: 4rem;
+    text-indent: 5rem; 
+}
+a[href*="quote"] {
+    background: url(images/quote.png) no-repeat center left;
+    background-size: 4rem;
+    text-indent: 5rem; 
+}
+a[href*="link"] {
+    background: url(images/link.png) no-repeat center left;
+    background-size: 4rem;
+    text-indent: 5rem; 
+}
+a[href*="post"] {
+    background: url(images/post.png) no-repeat center left;
+    background-size: 4rem;
+    text-indent: 5rem;
+}
+td > a[href*="image"] {
+    background: url(images/image.png) no-repeat center left;
+    background-size: 4rem;
+    text-indent: 5rem; 
 }

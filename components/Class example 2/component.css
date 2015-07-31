@@ -74,8 +74,8 @@ li a[href*='google'] {
 p:last-child a{
     position: relative;
     display: inline-block;
-    width: 2rem;
-    height: 2rem;
+    width: 2.4rem;
+    height: 2.4rem;
     background: #333333;
     border-radius: 50%;
     text-indent: -9999px;
@@ -90,11 +90,25 @@ p:last-child a::after {
     border-bottom: solid 1rem transparent;
     
     position: absolute;
-    top: 0.5rem;
-    left: 0.75rem;
+    top: 0.2rem;
+    left: 0.9rem;
     color: #000000;
 
 }
-
-
-/* HEADER ======================================== */
+p:last-child a:hover {
+    animation: rotate 2s infinite;
+}
+@keyframes rotate {
+    from {
+        -ms-transform: rotate(0deg); /* IE 9 */
+        -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+        transform: rotate(0deg);
+    }
+    to { 
+        -ms-transform: rotate(360deg); /* IE 9 */
+        -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+        transform: rotate(360deg);
+    }
+    
+    
+}

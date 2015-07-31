@@ -11,7 +11,7 @@ body {
 }
 /*--------------------header--------------------*/
 h1 {
-    background: url(logo.gif) no-repeat;
+    background: url(logo.gif) no-repeat center; 
     width: calc(100%/3);
     height: 12rem;
     float: left;
@@ -29,7 +29,7 @@ header form, header > ul {
 }
 /*--------------------form-------------------------*/
 form{
-    
+   margin: 2rem 0; 
 }
 label {
     display: none;
@@ -45,14 +45,18 @@ input[type*="submit"] {
     width: 40px;
     padding: 6px 0;
     text-indent: -9999px;
-    background: url() no-repeat center;
+    background: url(search-icon.png) no-repeat center;
+    background-size: 6rem;
     border-right: 1px solid #777777;
 }
 /*-----------------Account info--------------------*/
+header > ul {
+    margin-bottom: 2rem;
+}
 header > ul li {
     display: inline-block;
+    padding: .5rem 1.2rem .5rem;
     border-right: 1px solid #d9d9d9;
-    padding: 2px 12px 4px;
     position: relative;
 }
 header ul li a {
@@ -63,13 +67,12 @@ header ul li a {
 header ul li > ul {
     display: none;
 }
-header li ul::before {
+header li ul{
     content: "\25BC";
     font-size: 2.5rem;
     display: block;
     position: absolute;
-    top: 37%;
-    right: 12%;
+   
 }
 header ul li > ul li a {
     width: 130px;
@@ -94,6 +97,7 @@ nav::before {
     display: table;
     clear: both;
 }
+
 nav ul {
     background: #000000;
     overflow: hidden;

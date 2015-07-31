@@ -78,6 +78,9 @@ nav ul a:hover, .current a{
     color: #5bc8a5;
 }
 p{
+    background: url('phone.png') no-repeat scroll 0 0; 
+    background-size: 3rem;
+    background-position: bottom center;
     width: 25%;
     float: left;
     font-size: 1.7rem;
@@ -85,15 +88,6 @@ p{
     color: #ffffff;
     line-height: 2rem;
     padding-top: .5rem;
-}
-p::before {
-    content: "";
-    width: 10rem;
-    height: 78px;
-    position: absolute;
-    left: 113rem;
-    top: 3rem;
-    background: url('phone.png') no-repeat scroll 0 0; 
 }
 p em {
     color: #5bc8a5;

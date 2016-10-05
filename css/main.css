@@ -3,37 +3,45 @@ Keown Creese
 06/08/15
 WBS
 */
-/* 
+/*
 ================================================================================
 WSP COMPONENT LIBRARY STYLESHEET
 ================================================================================ */
 
+/*
+Color
+#9E9E9E grey
+#8BC34A green
+#212121 black
+*/
 
 /* Body SPECIFIC ======================================== */
 body{
-    font: 100% "Helvetica Neue", Helvetica, Arial, sans-serif;
-    width: 960px;
+    font: 62.5% "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /*width: 960px;*/
     margin: 0 auto;
-    background: #D0DEE5;
-    color: #F9FBF6;
+    /*background: #D0DEE5;*/
+    /*color: #F9FBF6;*/
 }
 
-#wrap{
-    width: 96%;
-    margin: 0 auto;
-    background: #4691D1;
-}
 
 /* HEADER SPECIFIC ======================================== */
+
+header {
+    background: #3F51B5;
+    color: #C5CAE9;
+    width: 100%;
+    height: 24rem;
+    font-size: 1.1rem;
+}
 h1, h2, h3{
-    font: 25px 'Dancing Script', cursive, sans-serif;
+    font-family: 'Dancing Script', cursive, sans-serif;
     font-weight: bold;
     padding: 10px;
-    color: #4F87B5;
 }
 h1, h2:first-of-type{
-    font-size: 30px;
-    color: #fff;
+    font-size: 2.3rem;
+
 }
 h3{
     font: 17px "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -57,14 +65,13 @@ aside img{
     border-radius: 50%
 }
 /* COMPONENTS SPECIFIC ======================================== */
-section{
-    width: 93.492%; /*93.492% /862px*/
-    background: #74B7C2;
-    margin: 30px;
-    padding: 0 30px 30px 30px;
-    text-align: left;
+.view h2{
+    font-size: 2rem;
 }
-
+.thumbnail  {
+    min-height: 15rem;
+    padding: .5rem 2rem
+}
 img{
     width: 96%;
 }
